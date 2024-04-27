@@ -15,9 +15,9 @@ my_table=$(echo "$table"|awk '{
         }
     }
     } END {
-   for (i = 1; i <= NF; i++) {
-       print row[i]
-    }
+   $for (i = 1; i <= NF; i++) {
+    #   print row[i]
+    #}
     }')
 
 ## Print the transposed matrix
