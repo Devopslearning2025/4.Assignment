@@ -1,6 +1,6 @@
 #!/bin/bash
 SOURCE=/tmp/ram/app-logs
-DESTINATION=/tmp/ram/
+DESTINATION=/tmp/ram/archive
 DATE=$(date  +%F-%H-%M-%S)
 
 #Zipping the source directory in the destination folder
