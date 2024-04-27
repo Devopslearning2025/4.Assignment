@@ -18,4 +18,4 @@ my_table=$(echo "$table"|awk '{
    for (i = 1; i <= NF; i++) {
       print row[i]
    }
-    }'
+    }')
