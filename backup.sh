@@ -8,7 +8,7 @@ DATE=$(date  +%F-%H-%M-%S)
 read -p "Enter source directory: " source
 
 #Zipping the source directory and moving into destination folder
-tar -cvzf ${DESTINATION}/${source}-${DATE}.tar.gz $source
+tar -cvzf ${DESTINATION}${source}-${DATE}.tar.gz $source
 
 #Moving to destination directory
 #cd /tmp/ram
