@@ -18,9 +18,4 @@ my_table=$(echo "$table"|awk '{
    for (i = 1; i <= NF; i++) {
       print row[i]
    }
-    }')
-
-## Print the transposed matrix
-echo "$my_table"
-
-#cat table |awk '{for (i = 1; i <= NF; i++) { if (NF == 1) { row[i] = $i} } else { row[i] = row[i] " " $i } {print $i}}'
+    }'
