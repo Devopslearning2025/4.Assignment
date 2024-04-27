@@ -6,5 +6,5 @@ cpu=`ps -eo pid,ppid,%mem,%cpu,cmd --sort=-%cpu|head -5`
 
 echo "$cpu"
 
-echo "PID PPID CMD %CPU"
+echo "$PID $PPID $CMD $%CPU"
 
