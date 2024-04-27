@@ -15,7 +15,7 @@ my_table=$(echo "$table"|awk '{
         }
     }
     } END {
-   $for (i = 1; i <= NF; i++) {
+   #for (i = 1; i <= NF; i++) {
     #   print row[i]
     #}
     }')
