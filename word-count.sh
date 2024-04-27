@@ -2,7 +2,7 @@
 
 # Check if the correct number of arguments are provided
 if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 <test_file>"
+    echo "Please provide the file which has words"
     exit 1
 fi
 
@@ -13,5 +13,3 @@ test_file=$1
 awk '{for (i=1; i<=NF; i++) words[$i]++} END {for (word in words) print word, words[word]}' "$test_file" \
 | sort -k2,2nr \
 | head -n 5
-
-#awk '{for (i=1; i<=NF; i++) words[$i]++} END {for (word in words) print word, words[word] }'
