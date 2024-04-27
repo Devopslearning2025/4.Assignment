@@ -20,7 +20,7 @@ my_table=$(echo "$table"|awk '{
    }
     }')
 
-## Print the transposed matrix
-echo "$table"
-echo " "
-echo "$my_table"
+## Print the results
+echo "$table" #Printing Original
+echo " "    #Giving one line space 
+echo "$my_table" #Priting the our required format table
