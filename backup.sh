@@ -2,7 +2,7 @@
 
 #SOURCE=/tmp/ram/app-logs
 DESTINATION=/tmp/ram/archive/
-DATE=$(date  +%F-%H-%M)
+DATE=$(date  +%F-%H-%M-%S)
 
 #Enter the Source dir
 read -p "Enter source directory: " source
