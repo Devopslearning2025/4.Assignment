@@ -19,3 +19,6 @@ my_table=$(echo "$table"|awk '{
       print row[i]
    }
     }')
+
+## Print the transposed matrix
+echo "$my_table"
