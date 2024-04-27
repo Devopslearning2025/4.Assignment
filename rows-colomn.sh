@@ -11,7 +11,7 @@ my_table=$(echo "$table"|awk '{
         if (NR == 1){
             row[i] = $i
         } else {
-            row[i] = row[i] "" $i
+            row[i] = row[i] " " $i
         }
     }
     } END {
